@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Reels Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app__videos">
+      <div class="video">
+        <!-- header starts -->
+        <div class="videoHeader">
+          <span class="material-icons"> arrow_back </span>
+          <h3>Reels</h3>
+          <span class="material-icons"> camera_alt </span>
+        </div>
+        <!-- header ends -->
+        <div class="overlay"></div>
+
+        <div id="yt-shorts-iframe-0Zvvkbqj9hA" class="video__player"></div>
+
+        <!-- footer starts -->
+        <div class="videoFooter">
+          <div class="videoFooter__text">
+            <img
+              class="user__avatar"
+              src="https://www.w3schools.com/howto/img_avatar.png"
+              alt=""
+            />
+            <h3>Somanath Goudar • <button>Follow</button></h3>
+          </div>
+
+          <div class="videoFooter__ticker">
+            <span class="material-icons"> music_note </span>
+            <marquee>Song Name</marquee>
+          </div>
+
+          <div class="videoFooter__actions">
+            <div class="videoFooter__actionsLeft">
+              <span class="material-icons"> favorite </span>
+              <span class="material-icons"> mode_comment </span>
+              <span class="material-icons"> send </span>
+              <span class="material-icons"> more_horiz </span>
+            </div>
+            <div class="videoFooter__actionsRight">
+              <div class="videoFooter__stat">
+                <span class="material-icons"> favorite </span>
+                <p>12</p>
+              </div>
+              <div class="videoFooter__stat">
+                <span class="material-icons"> mode_comment </span>
+                <p>20</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer ends -->
+      </div>
+
+      <div class="video">
+        <!-- header starts -->
+        <div class="videoHeader">
+          <span class="material-icons"> arrow_back </span>
+          <h3>Reels</h3>
+          <span class="material-icons"> camera_alt </span>
+        </div>
+        <!-- header ends -->
+
+        <div class="overlay"></div>
+        <div id="yt-shorts-iframe-JPsrlhA7fzw" class="video__player"></div>
+
+        <!-- footer starts -->
+        <div class="videoFooter">
+          <div class="videoFooter__text">
+            <img
+              class="user__avatar"
+              src="https://www.w3schools.com/howto/img_avatar.png"
+              alt=""
+            />
+            <h3>Somanath Goudar • <button>Follow</button></h3>
+          </div>
+
+          <div class="videoFooter__ticker">
+            <span class="material-icons"> music_note </span>
+            <marquee>Song Name</marquee>
+          </div>
+
+          <div class="videoFooter__actions">
+            <div class="videoFooter__actionsLeft">
+              <span class="material-icons"> favorite </span>
+              <span class="material-icons"> mode_comment </span>
+              <span class="material-icons"> send </span>
+              <span class="material-icons"> more_horiz </span>
+            </div>
+            <div class="videoFooter__actionsRight">
+              <div class="videoFooter__stat">
+                <span class="material-icons"> favorite </span>
+                <p>12</p>
+              </div>
+              <div class="videoFooter__stat">
+                <span class="material-icons"> mode_comment </span>
+                <p>20</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer ends -->
+      </div>
+      <div class="video">
+        <!-- header starts -->
+        <div class="videoHeader">
+          <span class="material-icons"> arrow_back </span>
+          <h3>Reels</h3>
+          <span class="material-icons"> camera_alt </span>
+        </div>
+        <!-- header ends -->
+
+        <div class="overlay"></div>
+        <div id="yt-shorts-iframe-xQNeofIkmoo" class="video__player"></div>
+
+        <!-- footer starts -->
+        <div class="videoFooter">
+          <div class="videoFooter__text">
+            <img
+              class="user__avatar"
+              src="https://www.w3schools.com/howto/img_avatar.png"
+              alt=""
+            />
+            <h3>Somanath Goudar • <button>Follow</button></h3>
+          </div>
+
+          <div class="videoFooter__ticker">
+            <span class="material-icons"> music_note </span>
+            <marquee>Song Name</marquee>
+          </div>
+
+          <div class="videoFooter__actions">
+            <div class="videoFooter__actionsLeft">
+              <span class="material-icons"> favorite </span>
+              <span class="material-icons"> mode_comment </span>
+              <span class="material-icons"> send </span>
+              <span class="material-icons"> more_horiz </span>
+            </div>
+            <div class="videoFooter__actionsRight">
+              <div class="videoFooter__stat">
+                <span class="material-icons"> favorite </span>
+                <p>12</p>
+              </div>
+              <div class="videoFooter__stat">
+                <span class="material-icons"> mode_comment </span>
+                <p>20</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer ends -->
+      </div>
+    </div>
+
+    <script>
+      // const videos = document.querySelectorAll("video");
+
+      // for (const video of videos) {
+      //   video.addEventListener("click", function () {
+      //     if (video.paused) {
+      //       video.play();
+      //     } else {
+      //       video.pause();
+      //     }
+      //   });
+      // }
+      const tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      const firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      const ytShortsPlayers = [];
+
+      function onYouTubeIframeAPIReady() {
+        const ytShortsIds = ["0Zvvkbqj9hA", "JPsrlhA7fzw", "xQNeofIkmoo"];
+
+        ytShortsIds.forEach((ytShortsId, index) => {
+          ytShortsPlayers[index] = new YT.Player(
+            `yt-shorts-iframe-${ytShortsId}`,
+            {
+              videoId: ytShortsId,
+              playerVars: {
+                autoplay: 0,
+                controls: 0,
+                autohide: 0,
+                modestbranding: 1,
+                playsinline: 1,
+                rel: 0,
+                iv_load_policy: 3,
+                loop: 1,
+                showinfo: 0,
+                playlist: ytShortsId,
+              },
+              events: {
+                // onReady: (event) => {
+                //   event.target.setVolume(0);
+                //   event.target.playVideo();
+                // },
+              },
+            }
+          );
+        });
+        // console.log(ytShortsPlayers);
+      }
+
+      let lastScrollTop = 0;
+      let scrollDebounce = true;
+      let currentElement = 0;
+
+      document.querySelector(".app__videos").addEventListener("scroll", () => {
+        const currentScrollPosition =
+          document.querySelector(".app__videos").scrollTop;
+        const videoElement = document.querySelector(".video");
+        let ytShortsBlockHeight = videoElement.offsetHeight;
+        let ytShortsBlockHeightMargin = +window
+          .getComputedStyle(videoElement)
+          .getPropertyValue("padding-top")
+          .split("px")[0];
+        ytShortsBlockHeightMargin += +window
+          .getComputedStyle(videoElement)
+          .getPropertyValue("padding-bottom")
+          .split("px")[0];
+        console.log(
+          Math.round(currentScrollPosition),
+          ytShortsBlockHeight,
+          ytShortsBlockHeightMargin,
+          Math.round(currentScrollPosition) +
+            Math.round(ytShortsBlockHeightMargin * 2) -
+            ytShortsBlockHeight
+        );
+        if (
+          Math.round(currentScrollPosition) % ytShortsBlockHeight == 0 ||
+          (Math.round(currentScrollPosition) +
+            Math.round(ytShortsBlockHeightMargin) * 2) %
+            ytShortsBlockHeight ==
+            0
+        ) {
+          ytShortsPlayers[currentElement].pauseVideo();
+          currentElement =
+            Math.round(currentScrollPosition) / ytShortsBlockHeight;
+          //console.log(ytShortsPlayers[currentElement]);
+          ytShortsPlayers[currentElement].playVideo();
+        }
+        // document.querySelectorAll(".video").forEach((video) => {
+        //   console.log(video.offsetHeight);
+        // });
+      });
+
+      // function moveCurrentYtShorts() {
+      //   let currentScrollTop = ytShortsIconClicked ? 0 : $(this).scrollTop();
+      //   if (scrollDebounce || ytShortsIconClicked) {
+      //     scrollDebounce = false;
+      //     let ytShortsVideoHeight = $("#ytShortsModal .yt-shorts-element")[0]
+      //       .offsetHeight;
+
+      //     // pauseVideo(currentElement);
+
+      //     if (!ytShortsIconClicked) {
+      //       if (currentScrollTop <= lastScrollTop) {
+      //         if (currentElement > 0) {
+      //           currentElement--;
+      //         }
+      //       } else {
+      //         if (currentElement < carsLastIndex) {
+      //           currentElement++;
+      //         }
+      //       }
+      //     }
+      //     ytShortsIconClicked = false;
+
+      //     const scrollAmount = ytShortsVideoHeight * currentElement;
+      //     const ytShortsModal = $("#ytShortsModal");
+
+      //     $(ytShortsModal).animate(
+      //       {
+      //         scrollTop: scrollAmount,
+      //       },
+      //       200
+      //     );
+      //     const screenWidth = $(window).width();
+
+      //     // playVideo(currentElement);
+      //     ytShortsPlayers[currentElement].seekTo(0);
+
+      //     $(ytShortsModal).css("overflow", "hidden");
+      //     $(ytShortsModal).css("width", "100vw");
+      //     setTimeout(
+      //       () => {
+      //         $(ytShortsModal).css("overflow", "auto");
+      //         if (screenWidth > mobileMaxWidth)
+      //           $(ytShortsModal).css("width", "calc(100vw + 17px)");
+      //         scrollDebounce = true;
+      //       },
+      //       screenWidth <= mobileMaxWidth ? 700 : 500
+      //     );
+      //   }
+      //   lastScrollTop = currentScrollTop;
+      // }
+    </script>
+  </body>
+</html>
