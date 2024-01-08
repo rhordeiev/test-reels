@@ -10,14 +10,14 @@ html {
 body {
   color: white;
   /* background-color: black; */
-  height: 100svh;
+  height: 100dvh;
   display: grid;
   place-items: center;
 }
 
 .app__videos {
   position: relative;
-  height: 100svh;
+  height: 100dvh;
   background-color: white;
   overflow: scroll;
   width: 100%;
