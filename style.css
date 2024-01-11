@@ -66,16 +66,37 @@ iframe {
   iframe {
     border-radius: 0;
   }
+  body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
   .app__videos {
     width: 100%;
     height: 100%;
     max-width: 100%;
     border-radius: 0;
   }
-}
+} */
 
 /* video header */
 
